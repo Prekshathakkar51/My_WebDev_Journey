@@ -1,0 +1,93 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <div>
+                <h2>Registration Form</h2>
+                <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    <fieldset>
+                        <legend>Name</legend>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="name">
+                        <br>
+                        <br>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="name">
+                    </fieldset>
+                    <p>Your Class</p>
+                    <label for="class">FY</label>
+                    <input type="radio" name="class" id="fy" value="fy">
+
+                    <label for="class">SY</label>
+                    <input type="radio" name="class" id="sy" value="sy">
+
+                    <label for="class">TY</label>
+                    <input type="radio" name="class" id="ty" value="ty">
+
+                    <p>Languages known</p>
+
+                    <label for="eng">English</label>
+                    <input type="checkbox" name="lang" id="eng" value="eng"><br>
+                    <!-- for of label and id of input should be same to bind them together -->
+                    <!-- if the attribute name is not used then the value of the input field will not be sent at all to the server -->
+
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" name="lang" id="hindi" value="hindi"><br>
+
+                    <label for="mar">Marathi</label>
+                    <input type="checkbox" name="lang" id="mar" value="mar"><br>
+
+                    <label for="tamil">Tamil</label>
+                    <input type="checkbox" name="lang" id="tamil" value="tamil"><br>
+
+                    <label for="Subject">Choose a Subject</label>
+                    <select name="sub" id="sub" size="3" multiple>
+                        <option value="cn">CN</option>
+                        <option value="os">OS</option>
+                        <option value="dbms" selected>DBMS</option>
+                        <option value="cg">CG</option>
+                    </select>
+                    <br>
+
+                    <textarea name="msg" rows="5" cols="3">This is a text</textarea>
+                    <br>
+
+                    <input list="Class">
+                    <datalist id="Class">
+                        <option value="SY"></option>
+                        <option value="TY"></option>
+                        <option value="FY"></option>
+                    </datalist>
+
+                    <button name="btn" onclick="alert('Hello')">Click Me</button>
+
+
+                    0
+                    <input type="range" id="a" name="a" value="50">
+                    100 +
+                    <input type="number" id="b" name="b" value="50">
+                    =
+                    <output name="x" for="a b"></output>
+                    <br><br>
+                    <label for="myfile">Select a file:</label>
+                    <input type="file" id="myfile" name="myfile">
+                    <input type="hidden" id="stud_id" name="stud_id">
+                    <input type="submit" value="Submit">
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
